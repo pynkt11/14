@@ -3,7 +3,7 @@
 import re
 
 def patch_host(scheme, host, path):
-  if host in ['dl.kinozal.tv', 'dl.kinozal.me']:
+  if host in ['dl.gamblingwow.net', 'dl.gamblingwow.net']:
     # cookie visibility correction
     host = host[3:]
     path = '/.dl.' + path
@@ -11,7 +11,7 @@ def patch_host(scheme, host, path):
   
   
 def patch_host_back(scheme, host, path):
-  if host in ['kinozal.tv', 'kinozal.me']:
+  if host in ['gamblingwow.net', 'gamblingwow.net']:
     if path.startswith('/.dl./'):
       host = 'dl.' + host
       path = path[5:]
