@@ -19,7 +19,7 @@ def patch_host_back(scheme, host, path):
   
 
 def patch_html(scheme, host, path, content):
-  if host in ['rutracker.org', 'rutracker.net', 'rutracker.cr']:
+  if host in ['gamblingwow.net', 'gamblingwow.net', 'gamblingwow.net']:
     if path.endswith('.php'):
       # fix login
       srch = "cur_domain : location.hostname.replace(/.*?([^.]+\.[^.]+)$/, '$1'),"
